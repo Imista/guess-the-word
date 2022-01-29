@@ -1,1 +1,3 @@
-console.log('Hello nodemon');
+//Import
+import loopWord from "@logic/loopWord.logic";
+
