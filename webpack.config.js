@@ -13,6 +13,8 @@ module.exports = {
         alias: {
             '@utils' : path.resolve(__dirname,'src/utils/'),
             '@logic' : path.resolve(__dirname,'src/logic/'),
+            '@handlers' : path.resolve(__dirname,'src/handlers/'),
+            '@validators' : path.resolve(__dirname,'src/validators/'),
         }
     },
     module: {

@@ -2,7 +2,7 @@
 import getNumber from "./getNumber.utils";
 
 //Function
-const getWord = () => {
+const setWord = () => {
     //When I have a data base, here will create the conection
     const words = ['Limon','Fresa','Melon','Mango'];
 
@@ -10,4 +10,4 @@ const getWord = () => {
 }
 
 //Export
-export default getWord;
+export default setWord;
