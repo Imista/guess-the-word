@@ -1,0 +1,20 @@
+{
+  "name": "guess-the-word",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuffinPlease/guess-the-word.git"
+  },
+  "keywords": [],
+  "author": "Muffin Please <benjamintec3455@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MuffinPlease/guess-the-word/issues"
+  },
+  "homepage": "https://github.com/MuffinPlease/guess-the-word#readme"
+}
