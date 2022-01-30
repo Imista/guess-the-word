@@ -1,4 +1,8 @@
-const howMuchEqual = (word, letters) => {
+import createInputs from "@utils/createInputs.utils";
+import loopWord from "@logic/loopWord.logic";
+import isCorrect from "./isCorrect.validator";
+
+const howMuchEqual = (word, letters,setDisable) => {
     const hint = [];
 
     for (let i = 0; i < word.length; i++) {
@@ -14,8 +18,16 @@ const howMuchEqual = (word, letters) => {
                 hint.push('X');
         }
     }
+    setDisable();
+
 
     console.log(hint);
+
+    //Everything is ok?
+    if(isCorrect(hint)){
+        loopWord();
+    }else
+        createInputs(word.length,word);
 }
 
 export default howMuchEqual;
