@@ -15,6 +15,7 @@ module.exports = {
             '@logic' : path.resolve(__dirname,'src/logic/'),
             '@handlers' : path.resolve(__dirname,'src/handlers/'),
             '@validators' : path.resolve(__dirname,'src/validators/'),
+            '@styles' : path.resolve(__dirname,'src/styles/'),
         }
     },
     module: {
