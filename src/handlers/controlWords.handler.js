@@ -12,7 +12,6 @@ const controlWords = (word,inputs,button) => {
             button.disabled = true;
         }else{
             //Error text
-            console.log('a')
         }
     });
 }
