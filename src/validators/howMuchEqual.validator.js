@@ -18,14 +18,15 @@ const howMuchEqual = (word, letters,setDisable) => {
                 hint.push('X');
         }
     }
-    setDisable();
+    setDisable(hint);
 
 
     console.log(hint);
 
     //Everything is ok?
     if(isCorrect(hint)){
-        loopWord();
+        // loopWord(); Win
+        console.log('Yei');
     }else
         createInputs(word.length,word);
 }
