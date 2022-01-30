@@ -10,21 +10,50 @@
 <body>
     <main>
         <div class="main">
-            <form action="">
-                <div class="word-content"><input type="text" class="word-letter"></div>
-                <div class="word-content"><input type="text" class="word-letter"></div>
-                <div class="word-content"><input type="text" class="word-letter"></div>
-                <div class="word-content"><input type="text" class="word-letter"></div>
-                <div class="word-content"><input type="text" class="word-letter"></div>
-                <div class="word-content"><input type="text" class="word-letter"></div>
-                <div class="word-content"><input type="text" class="word-letter"></div>
-                <div class="word-content"><input type="text" class="word-letter"></div>
-            </form>
-            <button>></button>
+            <div class="try">
+                <form action="">
+                    <div class="word-content"><input type="text" class="word-letter"></div>
+                    <div class="word-content"><input type="text" class="word-letter "></div>
+                    <div class="word-content"><input type="text" class="word-letter"></div>
+                    <div class="word-content"><input type="text" class="word-letter"></div>
+                    <div class="word-content"><input type="text" class="word-letter"></div>
+                </form>
+                <button>></button>
+            </div>
         </div>
     </main>
     <footer>
         Her name is Jinx!
     </footer>
+    <script>
+        const inputs = document.querySelectorAll('input');
+        const final = inputs.length - 1;
+        //Change
+        for(let i = 0; i < (inputs.length - 1); i++){
+            inputs[i].addEventListener('keyup', (e) => {
+                //If is a letter
+                if(e.key.length === 1){
+                    inputs[i].value = e.key;
+                    inputs[i+1].select();
+                }
+            });
+        }
+            //Final
+        inputs[final].addEventListener('keyup', (e) => {
+            //If is a letter
+            if(e.key.length === 1){
+                inputs[final].value = e.key;
+            }
+            if(e.key === " "){
+                inputs[final].value = "";
+            }
+        })
+        //Empty
+        for(let input of inputs){
+            input.addEventListener('focus', (event) => {
+                input.value = "";
+            });
+        }
+    </script>
 </body>
 </html>
