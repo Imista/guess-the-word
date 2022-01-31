@@ -1,11 +1,8 @@
 //Import
-import setWord from "@utils/setWord.utils";
 import createInputs from "../utils/createInputs.utils";
 
 //Function
-const loopWord = () => {
-    const word = setWord().toUpperCase();
-
+const loopWord = (word) => {
     createInputs(word.length, word, true);
 }
 

@@ -19,9 +19,6 @@ const howMuchEqual = (word, letters,setDisable) => {
     }
     setDisable(hint);
 
-
-    console.log(hint);
-
     //Everything is ok?
     if(isCorrect(hint)){
         // loopWord(); Win
