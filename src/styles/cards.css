@@ -1,0 +1,150 @@
+@import './global.css';
+
+/* Cards */
+main{
+    /* Display */
+    display: flex;
+    justify-content: center;
+    padding: 24px 16px;
+    /* Text */
+    font-size: 48px;
+}
+
+.try{
+    margin: 20px 0;
+}
+
+form, .word-content{
+    display: inline;
+}
+
+.word-content{
+    padding: 16px;
+}
+
+.word-letter{
+    /* Box */
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border: 2px solid #9b9b9b;
+    /* Text */
+    text-transform: uppercase;
+    color: inherit;
+    text-align: center; 
+    font-family: inherit;
+    font-size: inherit;
+    
+    /* Transition  */
+    transition: all 0.5s 0s ease;
+}
+
+
+.word-letter:focus{
+    transform: scale(1.1);
+}
+@media (hover){
+    .word-letter:hover{
+        transform: scale(1.1);
+    }
+}
+
+.word-letter.disable{
+    color: white;
+    background-color: #da3e28;
+    border: none;
+}
+
+.word-letter.disable.correct{
+    background-color: #85c040;
+}
+
+.word-letter.disable.partial{
+    background-color: #ffd237;
+}
+
+button{
+    /* Box */
+    width: 72px;
+    height: 72px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 0;
+    outline: 0;
+    /* Text */
+    font-size: inherit;
+    font-family: inherit;
+    color: #232228;
+}
+
+/* Media Changes */
+@media (max-width: 1450px){
+    .word-content{
+        padding: 12px;
+    }
+    main{
+        font-size: 36px;
+    }
+    .word-letter{
+        width: 60px;
+        height: 60px;
+    }
+    button{
+        /* Box */
+        width: 54px;
+        height: 54px;
+    }
+}
+@media (max-width: 980px){
+    .word-content{
+        padding: 8px;
+    }
+}
+@media (max-width: 840px){
+    main{
+        font-size: 24px;
+    }
+    .word-letter{
+        width: 40px;
+        height: 40px;
+    }
+    button{
+        /* Box  */
+        width: 36px;
+        height: 36px;
+    } 
+}
+@media (max-width: 640px){
+    .word-content{
+        padding: 1px;
+    }
+    main{
+        font-size: 20px;
+    }
+    .word-letter{
+        width: 32px;
+        height: 32px;
+    }
+    button{
+        /* Box  */
+        width: 28px;
+        height: 28px;
+    } 
+}
+@media (max-width: 420px){
+    main{
+        font-size: 15px;
+    }
+    .word-letter{
+        width: 24px;
+        height: 24px;
+    }
+    button{
+        /* Box  */
+        width: 21px;
+        height: 21px;
+    } 
+}

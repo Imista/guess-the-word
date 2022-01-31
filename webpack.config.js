@@ -16,6 +16,8 @@ module.exports = {
             '@handlers' : path.resolve(__dirname,'src/handlers/'),
             '@validators' : path.resolve(__dirname,'src/validators/'),
             '@styles' : path.resolve(__dirname,'src/styles/'),
+            '@templates' : path.resolve(__dirname,'src/templates/'),
+            '@data' : path.resolve(__dirname,'src/data/'),
         }
     },
     module: {

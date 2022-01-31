@@ -7,11 +7,9 @@ const setDisable = (inputs,button) => {
             input.classList.toggle('disable');
             //Color
             if(hint[i] === 'O'){
-                console.log('a');
                 input.classList.add('correct');
             }
             if(hint[i] === '-'){
-                console.log('b');
                 input.classList.add('partial');
             }
         }

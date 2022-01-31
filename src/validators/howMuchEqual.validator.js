@@ -1,5 +1,4 @@
 import createInputs from "@utils/createInputs.utils";
-import loopWord from "@logic/loopWord.logic";
 import isCorrect from "./isCorrect.validator";
 
 const howMuchEqual = (word, letters,setDisable) => {
