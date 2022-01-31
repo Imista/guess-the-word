@@ -1,0 +1,54 @@
+@import url(./global.css);
+
+footer{
+    padding: 12px 28px;
+}
+
+
+.footer{
+    /* Box */
+    margin-top: 24px;
+    padding: 4px 28px;
+    border-top: #9b9b9b 2px solid;
+    /* Display */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #9b9b9b;
+}
+
+.social{
+    /* Display */
+    display: flex;
+}
+
+.social-img{
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Box */
+    margin: 0 16px;
+}
+.social-img img{
+    width: 32px;
+    height: 32px;
+    cursor: pointer
+}
+
+.social-img.wiouth-link img{
+    cursor: not-allowed;
+}
+.footer-info{
+    margin: 20px 20px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 700px){
+    
+    .footer{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    } 
+}

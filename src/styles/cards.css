@@ -5,6 +5,7 @@ main{
     /* Display */
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     padding: 24px 16px;
     /* Text */
     font-size: 48px;
