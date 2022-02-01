@@ -1,5 +1,5 @@
 //Import
-import createInputs from "../utils/createInputs.utils";
+import createInputs from "@templates/createInputs.templates";
 
 //Function
 const loopWord = (word) => {

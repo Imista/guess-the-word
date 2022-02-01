@@ -1,4 +1,4 @@
-import getValue from "../utils/getValue.utils";
+import getValue from "@utils/getValue.utils";
 
 const isComplete = (inputs) => {
     const values = getValue(inputs);

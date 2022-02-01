@@ -40,7 +40,7 @@ const createInputs = (times, word, isReset = false) => {
     main.appendChild(div);
 
     //Control
-    inputControl(inputs);
+    inputControl(inputs,button);
     controlWords(word,inputs,button)
 }
 

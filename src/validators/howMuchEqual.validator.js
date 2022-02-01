@@ -1,4 +1,4 @@
-import createInputs from "@utils/createInputs.utils";
+import createInputs from "@templates/createInputs.templates";
 import isCorrect from "./isCorrect.validator";
 
 const howMuchEqual = (word, letters,setDisable) => {
