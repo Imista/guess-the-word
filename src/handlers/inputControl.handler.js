@@ -1,4 +1,6 @@
 const inputControl = (inputs,button) => {
+    inputs[0].select();
+
     const final = inputs.length - 1;
     //Change
     for(let i = 0; i < (inputs.length - 1); i++){

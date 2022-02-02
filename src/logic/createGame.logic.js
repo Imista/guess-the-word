@@ -2,9 +2,9 @@ import categoryData from "@data/categoryData.data";
 import wordData from "@data/wordData.data";
 import showCategory from "@templates/showCategory.templates";
 import setCategory from "@utils/setCategory.utils"
-import setWord from "@utils/setWord.utils";
 import showFooter from "@templates/showFooter.templates";
-import loopWord from "./loopWord.logic";
+import createWords from "@logic/createWords.logic";
+import createInputs from "@templates/createInputs.templates";
 
 const createGame = () => {
     //Category
@@ -15,8 +15,8 @@ const createGame = () => {
 
     //Word
     const words = wordData(category);
-    const word = setWord(words);
-    loopWord(word);
+    const createWord = createWords(words);
+    createInputs(createWord, true);
 
     //Footer
     const footer = document.querySelector('footer');

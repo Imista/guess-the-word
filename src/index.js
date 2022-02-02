@@ -6,3 +6,4 @@ import '@styles/header.css';
 import '@styles/footer.css';
 
 createGame();
+
