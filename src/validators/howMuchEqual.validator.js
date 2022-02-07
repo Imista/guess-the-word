@@ -1,7 +1,4 @@
-import createInputs from "@templates/createInputs.templates";
-import isCorrect from "./isCorrect.validator";
-
-const howMuchEqual = (word, letters,setDisable,createWord) => {
+const howMuchEqual = (word, letters,setDisable) => {
     const hint = [];
 
 
@@ -20,12 +17,7 @@ const howMuchEqual = (word, letters,setDisable,createWord) => {
     }
     setDisable(hint);
 
-    //Everything is ok?
-    if(isCorrect(hint)){
-        createInputs(createWord,true);
-    }else{
-        createInputs(createWord,false,word);
-    }
+    return hint;
 }
 
 export default howMuchEqual;

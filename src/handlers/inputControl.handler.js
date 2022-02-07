@@ -31,9 +31,8 @@ const inputControl = (inputs,button) => {
         }
         if(e.key === 'Backspace'){
             inputs[final-1].select();
-        }
-        
-    })
+        } 
+    });
     //Empty
     for(let input of inputs){
         input.addEventListener('focus', (event) => {
