@@ -1,26 +1,23 @@
 import controlWords from "@handlers/controlWords.handler";
 import inputControl from "@handlers/inputControl.handler";
 
-const createInputs = (createWord, isReset = false,repeatWord = undefined) => {
-    //Set Word
-    let word = '';
-    if(!repeatWord){
-        word = createWord();
-    }else{
-        word = repeatWord;
-    }
-    
+const createInputs = (Box, isReset = false) => {
     //Const
-    const times = word.length;
     const main = document.querySelector('.main') || null;
     const div = document.createElement('div');
     div.classList.add('try');
     const form =  document.createElement('form');
-
+    
+    //Set Word
     if(isReset) {
         main.innerHTML = '';
+        Box.newWord();
     }
     
+    const word = Box.word;
+    const times = word.length;
+    console.log(Box.words);
+
     //Create
     const inputs = [];
     const contents = [];
@@ -51,7 +48,7 @@ const createInputs = (createWord, isReset = false,repeatWord = undefined) => {
 
     //Control
     inputControl(inputs,button);
-    controlWords(word,inputs,button,createWord);
+    controlWords(Box,inputs,button);
 }
 
 export default createInputs;

@@ -7,7 +7,9 @@ import isCorrect from "@validators/isCorrect.validator";
 import createInputs from "@templates/createInputs.templates";
 
 
-const controlWords = (word,inputs,button,createWord) => {
+const controlWords = (Box,inputs,button) => {
+    const word = Box.word;
+
     button.addEventListener('click', () => {
         if(isComplete(inputs)){
             const value = getValue(inputs);
@@ -16,9 +18,9 @@ const controlWords = (word,inputs,button,createWord) => {
 
             //Is correct?
             if(isCorrect(hint)){
-                createPopUp(word, () => createInputs(createWord,true));
+                createPopUp(word, () => createInputs(Box,true));
             }else{
-                createInputs(createWord,false,word);
+                createInputs(Box);
             }
         }else{
             //Error text

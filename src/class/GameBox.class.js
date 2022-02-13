@@ -13,12 +13,10 @@ class GameBox{
         this._level ++;
     }
     newWord(){
-        const index = this.words.indexOf(this.word);
-        words.splice(this.index, 1);
-
-        this._word = setWord(this._words);
+        const index = this._words.indexOf(this._word);
+        this._words.splice(index, 1);
         
-        console.log('New word');
+        this._word = setWord(this._words);
     }
 
 
@@ -29,8 +27,11 @@ class GameBox{
     set category(cat){
         this._category = cat;
     }
-    set words(w){
-        this._words = w;
+    set words(array){
+        this._words = array;
+    }
+    get words(){
+        return this._words;
     }
     get word(){
         return this._word;
