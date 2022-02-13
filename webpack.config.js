@@ -20,6 +20,7 @@ module.exports = {
             '@templates' : path.resolve(__dirname,'src/templates/'),
             '@data' : path.resolve(__dirname,'src/data/'),
             '@resources' : path.resolve(__dirname,'src/resources/'),
+            '@class' : path.resolve(__dirname,'src/class/'),
         }
     },
     module: {

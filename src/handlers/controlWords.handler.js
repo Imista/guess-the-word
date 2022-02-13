@@ -8,8 +8,6 @@ import createInputs from "@templates/createInputs.templates";
 
 
 const controlWords = (word,inputs,button,createWord) => {
-    console.log(word);
-
     button.addEventListener('click', () => {
         if(isComplete(inputs)){
             const value = getValue(inputs);

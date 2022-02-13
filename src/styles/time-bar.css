@@ -1,0 +1,30 @@
+@import "./global.css";
+
+.timer{
+    width: 100%;
+    /* Box */
+    margin: 40px 0;
+    /* Display */
+    display: flex;
+    justify-content: center;
+}
+
+.timer-border{
+    /* Box */
+    width: 80%;
+    height: 20px;
+    border: #9b9b9b 2px solid;
+    border-radius: 20px;
+    padding: 2px;
+    /* Display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-bar{
+    width: 0%;
+    height: 90%;
+    background-color: #9b9b9b;
+    border-radius: 20px;
+}

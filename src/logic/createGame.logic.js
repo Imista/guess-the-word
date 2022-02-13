@@ -5,13 +5,16 @@ import setCategory from "@utils/setCategory.utils"
 import showFooter from "@templates/showFooter.templates";
 import createWords from "@logic/createWords.logic";
 import createInputs from "@templates/createInputs.templates";
+import createHeader from "@templates/createHeader.templates";
 
 const createGame = () => {
     //Category
     const head = document.querySelector('.header');
+    const timer = document.querySelector('.timer');
     const categories = categoryData();
     const category = setCategory(categories);
-    showCategory(head,categories,category);
+    const categoryCreator = showCategory(head,categories,category);
+    createHeader(timer,categoryCreator);
 
     //Word
     const words = wordData(category);

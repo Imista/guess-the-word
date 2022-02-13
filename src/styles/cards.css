@@ -5,10 +5,16 @@ main{
     /* Display */
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+
     padding: 24px 16px;
     /* Text */
     font-size: 48px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .try{

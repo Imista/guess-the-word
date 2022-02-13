@@ -1,9 +1,13 @@
 @import './global.css';
+@import './time-bar.css';
 
 header{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
 
 /* Category */
 .header{
