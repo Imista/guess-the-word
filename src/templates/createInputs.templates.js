@@ -1,4 +1,5 @@
 import controlWords from "@handlers/controlWords.handler";
+import timerControl from "@handlers/timerControl.handler";
 import inputControl from "@handlers/inputControl.handler";
 
 const createInputs = (Box, isReset = false) => {
@@ -12,11 +13,11 @@ const createInputs = (Box, isReset = false) => {
     if(isReset) {
         main.innerHTML = '';
         Box.newWord();
+        timerControl(Box);
     }
     
     const word = Box.word;
     const times = word.length;
-    console.log(Box.words);
 
     //Create
     const inputs = [];
@@ -49,6 +50,7 @@ const createInputs = (Box, isReset = false) => {
     //Control
     inputControl(inputs,button);
     controlWords(Box,inputs,button);
+
 }
 
 export default createInputs;

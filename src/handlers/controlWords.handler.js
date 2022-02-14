@@ -9,15 +9,19 @@ import createInputs from "@templates/createInputs.templates";
 
 const controlWords = (Box,inputs,button) => {
     const word = Box.word;
+    console.log(word);
+    const disable = setDisable(inputs,button);
+    Box.toDisableInput = disable;
 
     button.addEventListener('click', () => {
         if(isComplete(inputs)){
             const value = getValue(inputs);
-            const hint = howMuchEqual(word,value,setDisable(inputs,button));
+            const hint = howMuchEqual(word,value,disable);
             button.disabled = true;
 
             //Is correct?
             if(isCorrect(hint)){
+                Box.disableTimer();
                 createPopUp(word, () => createInputs(Box,true));
             }else{
                 createInputs(Box);

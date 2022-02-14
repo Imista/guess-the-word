@@ -1,5 +1,5 @@
 const setDisable = (inputs,button) => {
-    return (hint) => {
+    return (hint = []) => {
         for(let i = 0; i < inputs.length;i++){
             const input = inputs[i];
             //Disable
