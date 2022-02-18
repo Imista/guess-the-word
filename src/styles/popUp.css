@@ -61,6 +61,73 @@
     font-family: inherit;
     color: #232228;
 }
+/* Coffee */
+.popup-box .popup-coffee{
+    font-size: 20px;
+}
+.popup-coffeButton-content{
+    /* display */
+    display: flex;
+    justify-content: space-between;
+    /* Box */
+    width: 90%;
+    padding: 0 5%;
+}
+
+.popup-coffeButton{
+    /* Box */
+    width: 45%;
+    height: 100%;
+    padding: 8px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 0;
+    margin: auto 0;
+    /* Text */
+    text-decoration: none;
+    font-size: 20px;
+    font-family: inherit;
+    text-align: center;
+    /* Transition  */
+    transition: all 0.5s 0s ease;
+}
+
+.popup-coffeButton:focus{
+    transform: scale(1.1);
+}
+@media (hover){
+    .popup-coffeButton:hover{
+        transform: scale(1.1);
+    }
+}
+
+.type-1{
+    /* Text */
+    color: #232228;
+    background-color: #ececec;
+}
+
+.type-2{
+    /* Text */
+    background-color: #232228;
+    color: #ececec;
+    border: 1px solid #ececec;
+}
+
+.popup-image{
+    width:300px;
+    height:300px;
+}
+
+.popup-coffeExplain{
+    /* Box */
+    margin-top: 8px;
+    /* Text    */
+    color: #0971af;
+    font-size: 20px;
+    text-decoration: underline #0971af;
+}
+
 
 /* Activate */
 .popup.activate .popup-background{

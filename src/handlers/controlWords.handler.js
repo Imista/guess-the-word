@@ -9,7 +9,7 @@ import createInputs from "@templates/createInputs.templates";
 
 const controlWords = (Box,inputs,button) => {
     const word = Box.word;
-    console.log(word);
+    console.log(word);//To delete
     const disable = setDisable(inputs,button);
     Box.toDisableInput = disable;
 
@@ -22,7 +22,12 @@ const controlWords = (Box,inputs,button) => {
             //Is correct?
             if(isCorrect(hint)){
                 Box.disableTimer();
-                createPopUp(word, () => createInputs(Box,true));
+                //Need new category?
+                if(Box.count >= 4){
+                    createPopUp(null, () => createInputs(Box,true));
+                }else{
+                    createPopUp(word, () => createInputs(Box,true));
+                }
             }else{
                 createInputs(Box);
             }
