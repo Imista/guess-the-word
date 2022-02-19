@@ -6,7 +6,7 @@ const inputControl = (inputs,button) => {
     for(let i = 0; i < (inputs.length - 1); i++){
         inputs[i].addEventListener('keyup', (e) => {
             //If is a letter
-            if(e.key.length === 1 && isNaN(e.key)){
+            if(e.keyCode >= 65 && e.keyCode <= 90){
                 inputs[i].value = e.key;
                 inputs[i+1].select();
             }else{
@@ -21,7 +21,7 @@ const inputControl = (inputs,button) => {
         //Final
     inputs[final].addEventListener('keyup', (e) => {
         //If is a letter
-        if(e.key.length === 1 && isNaN(e.key)){
+        if(e.keyCode >= 65 && e.keyCode <= 90){
             inputs[final].value = e.key;
         }else
         if(e.key === 'Enter'){
