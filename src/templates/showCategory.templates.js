@@ -1,11 +1,16 @@
 import categoryControl from "@handlers/categoryControl.handler";
 
-const showCategory = (content,categories,category) => {
+const showCategory = (Box) => {
+    const content = document.querySelector('.category');
+    content.innerHTML = '';
+    const categories = Box.categories;
+    const category = Box.category;
+
+
     const title = document.createElement('h1');
     title.innerText = "La categoria es:";
 
     const text = document.createElement('p');
-    // text.classList.add('category');
     categoryControl(categories,category,text);
 
     content.appendChild(title);

@@ -17,10 +17,10 @@ const timerControl = (Box) => {
         bar.style.width = `${percentaje}%`;
         
         if(percentaje >= 100){
+            //Definy lose function-------------------------------------
             clearInterval(progress);
-            createPopUp(Box.word, () => createInputs(Box,true));
-            //Definy lose function
             Box.disableInput();
+            createPopUp(Box.word, () => createInputs(Box,true));
         }
     }, speed);
     Box.toDisableTimer = () => clearInterval(progress);

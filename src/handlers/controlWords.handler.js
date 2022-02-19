@@ -5,6 +5,8 @@ import setDisable from "@utils/setDisable.utils";
 import createPopUp from "@templates/createPopUp.template";
 import isCorrect from "@validators/isCorrect.validator";
 import createInputs from "@templates/createInputs.templates";
+import setNewCategory from "@utils/setNewCategory.utils";
+import showCategory from "@templates/showCategory.templates";
 
 
 const controlWords = (Box,inputs,button) => {
@@ -23,8 +25,15 @@ const controlWords = (Box,inputs,button) => {
             if(isCorrect(hint)){
                 Box.disableTimer();
                 //Need new category?
-                if(Box.count >= 4){
-                    createPopUp(null, () => createInputs(Box,true));
+                console.log(Box.count);
+                if(Box.count >= 3){
+                    setNewCategory(Box);
+                    const coffeePopUp = () => {
+                        createInputs(Box,true);
+                        showCategory(Box);
+                    }
+
+                    createPopUp(word, () => createPopUp(null, () => coffeePopUp()));
                 }else{
                     createPopUp(word, () => createInputs(Box,true));
                 }

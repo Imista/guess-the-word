@@ -1,9 +1,12 @@
+import setCategory from "@utils/setCategory.utils";
 import setWord from "@utils/setWord.utils";
+import wordData from "@data/wordData.data";
 
 class GameBox{
-    constructor(category,words){
-        this._category = category;
-        this._words = words;
+    constructor(categories){
+        this._categories = categories;
+        this._category = setCategory(this._categories);
+        this._words = wordData(this._category);
         this._word = null;
         this._level = 1;
         this._count = 0;
@@ -14,6 +17,8 @@ class GameBox{
     //Methods---------------------------------------
     newLevel(){
         this._level ++;
+        this._count = 0;
+        this._words = wordData(this._category);
     }
     newWord(){
         const index = this._words.indexOf(this._word);
@@ -29,6 +34,9 @@ class GameBox{
         this._timerFunction();
     }
     //Get--------------------------------------
+    get categories(){
+        return this._categories;
+    }
     get category(){
         return this._category;
     }

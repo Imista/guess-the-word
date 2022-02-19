@@ -58,8 +58,8 @@ const createPopUp = (word, next) => {
     
     document.querySelector('main').appendChild(content);
 
+    //I cannot fix this
     if(!word){
-        //I cannot fix this
         document.querySelector('.popup-coffeButton.type-2').addEventListener('click',() => {
             content.remove();
             next();

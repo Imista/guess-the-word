@@ -6,6 +6,8 @@ const getSeconds = (level) => {
             return 40000;
         case 3:
             return 20000;
+        default:
+            return 10000;
     }
 }
 
