@@ -26,7 +26,7 @@ const controlWords = (Box,inputs,button) => {
                 Box.disableTimer();
                 //Need new category?
                 console.log(Box.count);
-                if(Box.count >= 3){
+                if(Box.count >= 5){
                     setNewCategory(Box);
                     const coffeePopUp = () => {
                         createInputs(Box,true);

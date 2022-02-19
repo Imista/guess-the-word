@@ -1,5 +1,5 @@
 const categoryData = () => {
-    return ['Herramientas','Frutas','Marcas','Personajes'];
+    return ['Frutas','Marcas','Colores','Red_social','Paises'];
 }
 
 export default categoryData;
