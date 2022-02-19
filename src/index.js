@@ -6,6 +6,7 @@ import '@styles/footer.css';
 import '@styles/popUp.css'
 import startGame from "@logic/startGame.logic";
 
-// createGame();
+console.log('Ver_0');
+
 startGame();
 
