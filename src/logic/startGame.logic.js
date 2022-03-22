@@ -4,8 +4,11 @@ import showCategory from "@templates/showCategory.templates";
 import showFooter from "@templates/showFooter.templates";
 import createInputs from "@templates/createInputs.templates";
 import createTimer from "@templates/createTimer.templates";
+import gamePreparation from "@utils/gamePreparation.utils";
 
 const startGame = () => {
+    //Reset html
+    gamePreparation();
     //Categories
     const categories = categoryData();
     //Word

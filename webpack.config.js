@@ -21,6 +21,8 @@ module.exports = {
             '@data' : path.resolve(__dirname,'src/data/'),
             '@resources' : path.resolve(__dirname,'src/resources/'),
             '@class' : path.resolve(__dirname,'src/class/'),
+            '@routes' : path.resolve(__dirname,'src/routes/'),
+            '@pages' : path.resolve(__dirname,'src/pages/'),
         }
     },
     module: {

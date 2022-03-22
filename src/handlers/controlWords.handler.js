@@ -11,7 +11,6 @@ import showCategory from "@templates/showCategory.templates";
 
 const controlWords = (Box,inputs,button) => {
     const word = Box.word;
-    console.log(word);//To delete
     const disable = setDisable(inputs,button);
     Box.toDisableInput = disable;
 

@@ -4,9 +4,17 @@ import '@styles/cards.css';
 import '@styles/header.css';
 import '@styles/footer.css';
 import '@styles/popUp.css'
-import startGame from "@logic/startGame.logic";
+import '@styles/background.css'
+// import startGame from "@logic/startGame.logic";
+// import Home from '@pages/Home.page';
+import router from '@routes/index.routes';
 
-console.log('Ver_0');
+window.addEventListener('load', router);
+window.addEventListener('hashchange', router);
 
-startGame();
 
+
+console.log('Ver_1');
+
+// startGame();
+// Home()
