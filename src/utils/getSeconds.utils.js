@@ -1,7 +1,7 @@
 const getSeconds = (level) => {
     switch(level){
         case 1:
-            return 80000;
+            return 2000;
         case 2:
             return 60000;
         case 3:

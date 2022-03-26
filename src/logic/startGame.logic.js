@@ -13,7 +13,6 @@ const startGame = () => {
     const categories = categoryData();
     //Word
     const Box = new GameBox(categories);
-
     //Header
     showCategory(Box);
     const timer = document.querySelector('.timer');

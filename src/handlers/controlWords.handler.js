@@ -24,7 +24,6 @@ const controlWords = (Box,inputs,button) => {
             if(isCorrect(hint)){
                 Box.disableTimer();
                 //Need new category?
-                console.log(Box.count);
                 if(Box.count >= 5){
                     setNewCategory(Box);
                     const coffeePopUp = () => {

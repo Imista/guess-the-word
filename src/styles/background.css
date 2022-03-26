@@ -29,7 +29,7 @@
     border: 4px solid #ececec;
     animation: animate 25s linear infinite;
     bottom: -150px;
-    
+    cursor: default;
 }
 
 .squares li:nth-child(1){
@@ -200,12 +200,29 @@ aside.Bg{
     color: #232228;
     background-color: #ececec;
 }
-
 .type-2{
     /* Text */
     background-color: #232228;
     color: #ececec;
     border: 1px solid #ececec;
+}
+.type-3{
+    /* Box */
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 5px;
+    box-sizing: content-box;
+    /* Text */
+    font-size: 32px;
+    background-color: #232228;
+    color: #ececec;
+    border: 1px solid #ececec;
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Cellphone */

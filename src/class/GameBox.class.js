@@ -3,6 +3,7 @@ import setWord from "@utils/setWord.utils";
 import wordData from "@data/wordData.data";
 
 class GameBox{
+
     constructor(categories){
         this._categories = categories;
         this._category = setCategory(this._categories);

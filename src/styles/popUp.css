@@ -77,7 +77,7 @@
 .popup-coffeButton{
     /* Box */
     width: 45%;
-    height: 100%;
+    height: 40px;
     padding: 8px;
     border-radius: 12px;
     cursor: pointer;
@@ -144,5 +144,311 @@
         width: 300px;
         padding: 12px;
         font-size: 24px;
+    }
+}
+
+/* Tutorial */
+.popup-box.tutorial{
+    /* Box */
+    width: 80%;
+    /* Text */
+    font-size: 20px;
+}
+
+.tutorial-box{
+    /* Display */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* Box */
+    padding: 12px;
+    place-items: center;
+    /* Text */
+
+}
+.tutorial-info:nth-of-type(1),.tutorial-info:nth-of-type(2){
+    margin-bottom: 12px;
+}
+.tutorial-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+}
+/* Part A */
+.tutorial-words{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tutorial-word{
+    /* Box */
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border: 2px solid #9b9b9b;
+    margin: 0 8px;
+    /* Text */
+    text-transform: uppercase;
+    color: inherit;
+    text-align: center; 
+    font-family: inherit;
+    font-size: 36px;
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Transition  */
+    transition: all 0.5s 0s ease;
+}
+.tutorial-word-button{
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Box */
+    width: 54px;
+    height: 54px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 0;
+    outline: 0;
+    background-color: white;
+    /* Text */
+    font-size: 32px;
+    font-family: inherit;
+    color: #232228;
+    text-align: center;
+}
+
+.tutorial-word.disable{
+    color: white;
+    background-color: #da3e28;
+    border: none;
+}
+
+.tutorial-word.disable.correct{
+    background-color: #85c040;
+}
+
+.tutorial-word.disable.partial{
+    background-color: #ffd237;
+}
+/* Part B */
+.tutorial-box-partB{
+    /* Display */
+    display: flex;
+    justify-content: center;
+}
+.tutorial-box-partB-letters{
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;    
+}
+.tutorial-table{
+    /* Text */
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    /* Box */
+    border-collapse: collapse;
+    border-radius: 20px;
+    margin: 8px;
+}
+
+td{
+    padding: 4px 8px;
+}
+
+.table-green{
+    color: #232228;
+    border-color: #85c040;
+    background-color: #85c040;
+}
+.table-yellow{
+    color: #232228;
+    border-color: #ffd237;
+    background-color: #ffd237;
+}
+.table-red{
+    color: #232228;
+    border-color: #da3e28;
+    background-color: #da3e28;
+}
+/* Part C */
+.tutorial-timer-border{
+    /* Box */
+    width: 400px;
+    height: 20px;
+    border: #9b9b9b 2px solid;
+    border-radius: 20px;
+    padding: 2px;
+    /* Display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tutorial-timer-bar{
+    width: 0%;
+    height: 90%;
+    background-color: #9b9b9b;
+    border-radius: 20px;
+}
+/* Part D */
+.tutorial-category{
+    /* Box */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #ececec;
+    /* Text */
+}
+
+.tutorial-category-text{
+    margin: 6px 0 6px 0;
+    font-size: 20px;
+}
+
+@media (max-width: 1220px){
+    .popup-box.tutorial{
+        /* Text */
+        font-size: 16px;
+    }
+    .tutorial-box{
+        /* Box */
+        padding: 8px;
+    }
+    .tutorial-info:nth-of-type(1),.tutorial-info:nth-of-type(2){
+        margin-bottom: 8px;
+    }
+    /* Part A */
+    .tutorial-word{
+        /* Box */
+        width: 40px;
+        height: 40px;
+        margin: 0 6px;
+        /* Text */
+        font-size: 28px;
+    }
+    .tutorial-word-button{
+        /* Display */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* Box */
+        width: 48px;
+        height: 48px;
+        /* Text */
+        font-size: 28px;
+    }
+    /* Part B */
+    .tutorial-table{
+        /* Text */
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        /* Box */
+        border-collapse: collapse;
+        border-radius: 20px;
+        margin: 6px;
+    }
+    td{
+        padding: 4px 6px;
+    }
+    /* Part C */
+    .tutorial-timer-border{
+        /* Box */
+        width: 360px;
+        height: 16px;
+    }
+    /* Part D */
+    .tutorial-category-text{
+        margin: 4px 0;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 952px){
+    .popup-box{
+        overflow-x: scroll;
+        height: 80%;
+    }
+    .tutorial-box{
+        /* Display */
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .tutorial-info{
+        padding-bottom: 8px;
+    }
+    .tutorial-info:last-child{
+        padding-bottom: 0;
+    }
+    .tutorial-category{
+        /* Box */
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px){
+    .popup-box.tutorial{
+        /* Text */
+        font-size: 12px;
+    }
+    .tutorial-box{
+        /* Box */
+        padding: 4px;
+    }
+    /* Part A */
+    .tutorial-word{
+        /* Box */
+        width: 28px;
+        height: 28px;
+        margin: 0 4px;
+        /* Text */
+        font-size: 20px;
+    }
+    .tutorial-word-button{
+        /* Display */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* Box */
+        width: 20px;
+        height: 20px;
+        /* Text */
+        font-size: 16px;
+    }
+    /* Part B */
+    .tutorial-table{
+        /* Text */
+        font-size: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        /* Box */
+        border-collapse: collapse;
+        border-radius: 20px;
+        margin: 4px;
+    }
+    td{
+        padding: 4px 4px;
+    }
+    /* Part C */
+    .tutorial-timer-border{
+        /* Box */
+        width: 200px;
+        height: 16px;
+    }
+    /* Part D */
+    .tutorial-category-text{
+        margin: 4px 0;
+        font-size: 16px;
     }
 }

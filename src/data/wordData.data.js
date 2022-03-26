@@ -9,8 +9,8 @@ const wordData = (category) => {
         Vehiculos: ['Carro','Bicicleta','Motocicleta','Avion','Tren','Barco','Bote','Camion','Trailer','Tractor','Metro'],
         Deportes: ['Futbol','Atletismo','Ciclismo','Natacion','Tenis','Voley','Basquetbol','Golf','Beisbol','Gimnasia','Patinaje'],
         Astronomia: ['Mercurio','Venus','Tierra','Marte','Jupiter','Saturno','Urano','Neptuno','Pluton','Sol','Luna'],
-        Signo_zodiacal: ['Aries','Tauro','Geminis','Cancer','Leo','Virgo','Libra','Escorpion','Sagitario','Acuario','Piscis'],
-        Mamiferos: ['Ballena','Cabllo','Delfin','Elefante','Leon','Gato','Hipopotamo','Jirafa','Oso','Humano','Perro']
+        Signo_zodiacal: ['Aries','Tauro','Geminis','Cancer','Leo','Virgo','Libra','Escorpio','Sagitario','Acuario','Piscis'],
+        Mamiferos: ['Ballena','Caballo','Delfin','Elefante','Leon','Gato','Hipopotamo','Jirafa','Oso','Humano','Perro']
     }
     return (words[category]).map(word => word.toUpperCase());
 }
