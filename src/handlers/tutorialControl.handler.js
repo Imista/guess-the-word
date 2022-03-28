@@ -82,7 +82,7 @@ const tutorialTimerControl = (tutorialBox) => {
 }
 //Category
 const tutorialCategory = (tutorialBox) => {
-    const categories = ['Frutas','Marcas','Colores','Vehiculos','Redes sociales','Deportes','Artronomia','Signo zodiacal'];
+    const categories = ['Frutas','Marcas','Colores','Vehiculos','Redes sociales','Deportes','Astronomia','Signo zodiacal'];
     const text = tutorialBox.categoryText;
     return setInterval(() => {
         text.innerHTML = `<i>${categories[getNumber(categories.length)]}</i>`

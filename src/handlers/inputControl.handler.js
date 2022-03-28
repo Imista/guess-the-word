@@ -3,9 +3,6 @@ import isKey from "@validators/isKey.validator";
 const inputControl = (inputs,button) => {
     inputs[0].select();
 
-    //test
-    const testText = document.querySelector('p');
-
     const final = inputs.length - 1;
     //Change
     for(let i = 0; i < (inputs.length - 1); i++){
@@ -42,19 +39,6 @@ const inputControl = (inputs,button) => {
             inputs[final-1].select();
         }
     })
-    //     //If is a letter
-    //     if(e.keyCode >= 65 && e.keyCode <= 90){
-    //         inputs[final].value = e.key;
-    //     }else
-    //     if(e.key === 'Enter'){
-    //         button.click();
-    //     }else{
-    //         inputs[final].value = "";
-    //     }
-    //     if(e.key === 'Backspace'){
-    //         inputs[final-1].select();
-    //     } 
-    // });
     //Empty
     for(let input of inputs){
         input.addEventListener('focus', (event) => {

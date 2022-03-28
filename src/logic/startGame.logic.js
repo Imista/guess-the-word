@@ -5,10 +5,12 @@ import showFooter from "@templates/showFooter.templates";
 import createInputs from "@templates/createInputs.templates";
 import createTimer from "@templates/createTimer.templates";
 import gamePreparation from "@utils/gamePreparation.utils";
+import createCountdown from "@templates/createCountdown.templates";
 
 const startGame = () => {
     //Reset html
     gamePreparation();
+    createCountdown()
     //Categories
     const categories = categoryData();
     //Word

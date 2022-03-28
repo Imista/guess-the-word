@@ -376,7 +376,7 @@ td{
 }
 
 @media (max-width: 952px){
-    .popup-box{
+    .popup-box.tutorial{
         overflow-x: scroll;
         height: 80%;
     }

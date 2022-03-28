@@ -7,7 +7,7 @@ const wordData = (category) => {
         Red_social: ['Facebook','Youtube','Whatsapp','Instagram','Tiktok','Twitter','Telegram','Linkedin','Pinterest','Tinder'],
         Paises: ['Mexico','Canada','China','Brasil','Colombia','Argentina','Peru','Chile','Suecia','Japon','Dinamarca','Noruega','Suiza','Australia'],
         Vehiculos: ['Carro','Bicicleta','Motocicleta','Avion','Tren','Barco','Bote','Camion','Trailer','Tractor','Metro'],
-        Deportes: ['Futbol','Atletismo','Ciclismo','Natacion','Tenis','Voley','Basquetbol','Golf','Beisbol','Gimnasia','Patinaje'],
+        Deportes: ['Futbol','Atletismo','Ciclismo','Natacion','Tenis','Voley','Basquet','Golf','Beisbol','Gimnasia','Patinaje'],
         Astronomia: ['Mercurio','Venus','Tierra','Marte','Jupiter','Saturno','Urano','Neptuno','Pluton','Sol','Luna'],
         Signo_zodiacal: ['Aries','Tauro','Geminis','Cancer','Leo','Virgo','Libra','Escorpio','Sagitario','Acuario','Piscis'],
         Mamiferos: ['Ballena','Caballo','Delfin','Elefante','Leon','Gato','Hipopotamo','Jirafa','Oso','Humano','Perro']
