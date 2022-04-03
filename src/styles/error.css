@@ -1,0 +1,67 @@
+@import './global.css';
+
+.errorPage{
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* Box */
+    height: 100vh;
+}
+
+.return{
+    /* Box */
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.return a:link,.return a:visited {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+.error{
+    /* Box */
+    width: 500px;
+    /* Text */
+    font-size: 24px;
+    text-align: center;
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center
+}
+.error-image{
+    /* Box */
+    width: 400px;
+    height: 400px;
+    background-color: burlywood;
+}
+
+footer{
+    width: 100%;
+}
+
+@media (max-width: 556px){
+    .return{
+        /* Box */
+        padding: 20px 10px;
+    }
+    
+    .error{
+        /* Box */
+        width: 300px;
+        /* Text */
+        font-size: 16px;
+    }
+    .error-image{
+        /* Box */
+        width: 240px;
+        height: 240px;
+    }
+}

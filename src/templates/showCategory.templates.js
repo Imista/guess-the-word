@@ -11,6 +11,7 @@ const showCategory = (Box) => {
     title.innerText = "La categoria es:";
 
     const text = document.createElement('p');
+    text.innerText = 'Muffin';
     categoryControl(categories,category,text);
 
     content.appendChild(title);
