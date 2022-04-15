@@ -5,7 +5,6 @@ import getHash from "@utils/getHash.utils";
 
 const timerControl = (Box) => {
     const word = Box.word;
-    console.log(word);
     const seconds = getSeconds(Box.level) + 4000;
     const bar = document.querySelector('.timer-bar');
     const times = 800;

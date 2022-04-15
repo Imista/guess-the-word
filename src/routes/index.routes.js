@@ -11,12 +11,7 @@ const routes = {
 const router = () => {
     const route = getHash();
     const render = routes[route] ? routes[route] : Error404;
-    //Clear interval
-    // for (let i = 0; i < 20; i++){
-    //     clearInterval(i);
-    // }
     render();
-    console.log(route);
 }
 
 export default router;

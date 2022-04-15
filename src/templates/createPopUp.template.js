@@ -40,7 +40,7 @@ const createPopUp = (word, next) => {
         
         box.appendChild(buttonBox);
         
-        box.innerHTML += `<a class="popup-coffeExplain">¿Porque veo esta ventana?</a>`
+        // box.innerHTML += `<a class="popup-coffeExplain">¿Porque veo esta ventana?</a>`
     }
 
     //Action listener
